@@ -2,7 +2,7 @@
 
 
 
-*  ✅  elenium2
+*  ✅  Selenium2
 *  ✅  Unittest
 *  ✅  Python2
 *  ✅  HTMLTestRunner

@@ -2,10 +2,10 @@
 
 
 
-*  :white_check_mark:  Selenium2 
-*  :white_check_mark:  Unittest 
+*  ✅  elenium2
+*  ✅  Unittest
 *  ✅  Python2
-*  :white_check_mark:  HTMLTestRunner
+*  ✅  HTMLTestRunner
 *  ✅  Jenkins
 *  ✅  Xpath
 
@@ -16,7 +16,7 @@
 ```
 .
 ├── READ.md
-├── __init__.py	
+├── __init__.py
 ├── common_lib					公共基础类
 │   ├── __init__.py
 │   └── common.py
@@ -54,11 +54,11 @@ unitest.main() 函数用来测试类中以 test 开头的测试用例
 
 ```
 # 构造测试集
-suite = unittest.TestSuite() 
-suite.addTest(Search("test_createuser_search")) 
+suite = unittest.TestSuite()
+suite.addTest(Search("test_createuser_search"))
 suite.addTest(Search("testResize"))
 # 执行测试
-runner = unittest.TextTestRunner() 
+runner = unittest.TextTestRunner()
 runner.run(suite)
 ```
 
@@ -70,7 +70,7 @@ runner.run(suite)
 def createsuite():
 	# 定义一个函数批量添加测试用例
     testunit = unittest.TestSuite()
-    
+
     # discover 方法定义
     # test_path：要测试的模块名或测试用例目录
     # pattern = "*.py"：表示用例文件名的匹配原则。星号“*”表示任意多个字符
@@ -83,7 +83,7 @@ def createsuite():
             testunit.addTests(test_case)
             print testunit
     return testunit
-    
+
 # 调用函数
 all_tests_name = createsuite()
 runner = HTMLTestRunner.HTMLTestRunner(
@@ -96,7 +96,7 @@ runner = HTMLTestRunner.HTMLTestRunner(
 runner.run(all_tests_name)
 ```
 
-​	
+​
 
 # 测试报告截图
 
@@ -112,9 +112,25 @@ runner.run(all_tests_name)
 
 # 附件
 
-​		
+##安装
 
-## :white_check_mark:  浏览器属性，调用说明：
+创建虚拟环境：virtualenv virproject_selenium
+
+加载环境：source  bin/activate
+
+安装库：pip install selenium -i https://pypi.doubanio.com/simple
+
+下载浏览器驱动：http://chromedriver.storage.googleapis.com/index.html
+
+unzip chromedriver_mac64.zip
+
+cp chromedriver /usr/local/bin/
+
+
+
+
+
+## *  ✅  浏览器属性，调用说明：
 
 driver.属性值
 
@@ -198,7 +214,7 @@ driver.属性值
 
 
 
-## :white_check_mark:  页面元素属性，调用说明：
+## *  ✅   页面元素属性，调用说明：
 
 driver.find_element*.属性值
 
@@ -224,7 +240,7 @@ element.属性值
 |                             |                           |
 
 
-## :white_check_mark: 鼠标事件  
+## *  ✅  鼠标事件  
 
 |                    | 说明                                       |
 | ------------------ | ---------------------------------------- |
@@ -240,7 +256,7 @@ element.属性值
 |                    |                                          |
 
 
-## :white_check_mark:  键盘事件
+## *  ✅  键盘事件
 
 |                             | 说明                        |
 | --------------------------- | ------------------------- |
@@ -253,4 +269,3 @@ element.属性值
 | send_keys(Keys.CONTROL,'c') | 复制(Ctrl+C)                |
 | send_keys(Keys.CONTROL,'x') | 剪切(Ctrl+X)                |
 | send_keys(Keys.CONTROL,'v') | 粘贴(Ctrl+V)                |
-

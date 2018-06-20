@@ -112,7 +112,7 @@ runner.run(all_tests_name)
 
 # 附件
 
-##安装
+## 安装
 
 创建虚拟环境：virtualenv virproject_selenium
 

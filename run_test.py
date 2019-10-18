@@ -40,3 +40,5 @@ runner = HTMLTestRunner.HTMLTestRunner(
 # 执行测试用例套件
 # runner = unittest.TextTestRunner()
 runner.run(all_tests_name)
+
+
